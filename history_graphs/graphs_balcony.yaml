@@ -1,0 +1,12 @@
+gr3:
+  name: Balkon
+  entities:
+    - sensor.ttnplant1
+    - sensor.ttnplant2
+    - sensor.ttnplant3
+  hours_to_show: 48
+gr4:
+  name: TemperatureBalcony
+  entities:
+    - sensor.myseeeduino_temp
+  hours_to_show: 48

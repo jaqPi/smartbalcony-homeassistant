@@ -1,0 +1,24 @@
+# For documentation of component 'plant' see:
+# https://www.home-assistant.io/components/plant/
+#
+# Need to calibrate soil moisture sensors
+# and set min/max values
+#
+"ZickZackStrauch":
+    sensors:
+      moisture: sensor.ttnplant1
+      temperature: sensor.myseeeduino_temp
+#    min_moisture: 25 
+#    max_moisture: 60
+"Thymian":
+  sensors:
+    moisture: sensor.ttnplant2
+    temperature: sensor.myseeeduino_temp
+#    min_moisture: 25
+#    max_moisture: 60
+"ThymianMarco":
+  sensors:
+    moisture: sensor.ttnplant3
+    temperature: sensor.myseeeduino_temp
+#    min_moisture: 25
+#    max_moisture: 60

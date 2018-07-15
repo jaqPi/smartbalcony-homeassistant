@@ -1,0 +1,11 @@
+# defines group of balcony sensors and
+# graphs
+balcony:
+  name: Balkon
+  view: yes
+  entities:
+    - history_graph.balkon
+    - history_graph.temperaturebalcony
+    - plant.thymian
+    - plant.thymianmarco
+    - plant.zickzackstrauch

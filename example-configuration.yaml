@@ -1,0 +1,22 @@
+# merge these lines to your configuration.yaml
+
+# Enable the TTN componenet
+# see https://www.home-assistant.io/components/thethingsnetwork/
+# for sensor configuration see sensors/ttn.yaml
+thethingsnetwork:
+  app_id: !secret ttn_app_id
+  access_key: !secret ttn_access_key
+
+# see sensors/ttn.yaml
+sensor: !include_dir_merge_list sensors/
+
+# define the plant UI element
+# for documentation of component 'plant' see:
+# https://www.home-assistant.io/components/plant/
+plant: !include plants.yaml
+
+# see groups/groups_balcony.yaml
+group: !include_dir_merge_named groups/
+
+# see history_graphs/graphs_balcony.yaml
+history_graph: !include_dir_merge_named history_graphs/
